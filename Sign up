@@ -1,7 +1,10 @@
-<?php(isset($_POST['name']) && isset($_POST['last'])){    #Function put in place to check submissions
+<?php
+if(isset($_POST['name']) && isset($_POST['last'])){    #Function put in place to check submissions
   $name= $_POST['name'];        #Creating variables to store the info that is put into name, and last name input box
-  $last= $_POST['last'];
-
+  $last= $_POST['last'];         
+#Test echo: $name;
+#Test echo: '<br>' 
+#Test ech:$last;
 ?>
 
 <form action="FinalProject.php" method="post"> #Initializing php file. Post method sends data into php file
