@@ -1,16 +1,34 @@
 <?php
-if(isset($_POST['name']) && isset($_POST['last'])){    #Function put in place to check submissions
-  $name= $_POST['name'];        #Creating variables to store the info that is put into name, and last name input box
-  $last= $_POST['last'];         
-#Test echo: $name;
-#Test echo: '<br>' 
-#Test ech:$last;
-?>
-
-<form action="FinalPrjoect.php" method="POST">
-    First name: <h3><input type="text" name="First name" value=name..><h3><br>
-    Last name: <h3><input type="text" name="Last name" value=name..><h3><br>
-    <input type="hidden" name="form_submitted" value="1"/>
-
-  <input type="submit" value="Submit">
-
+<!doctype html>
+ <html>
+ <head>
+  <title> Final Project</title>
+ <link href="FinalPrjoect.css" rel= "stylesheet"/>
+  <?php require 'FinalProject.php' ?>
+ <script src= "FinalProject.js"></script>
+ <script>
+function validate(){
+ x = document.forms["myform"]["fname"].value;
+ if( x = " "){
+alert("Name must be filled out");
+return False;
+ }
+}
+</script>
+</head>
+<body background= >
+<form name="myForm" action= "Project1.html" onsubmit="return validate()" method="post">
+  <div class="container">   <!-- creating the boxes using container witch is ab element in div -->
+  <div class="main">
+  <h2>Javascript Login Form Validation</h2>
+  <form id="form_id" method="post" name="myform">
+  <label>User Name :</label>
+  <input type="text" name="username" id="username"/>
+  <label>Password :</label>
+  <input type="password" name="password" id="password"/>
+  <input type="submit" value="submit"><link onclick=href="Project1.html"/>   <!-- accessing user input by calling the id back-->
+  </form>
+  </div>
+  </div>
+  </body>
+  </html>
