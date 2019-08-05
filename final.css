@@ -1,0 +1,19 @@
+body{
+font-family: rockwell;
+text-align: center;
+background-color: white;
+}
+
+h2, h3, h4 {
+  font-style: oblique;
+  font-weight: bold;
+  color: white;
+  font-size: 30px;
+}
+h1  {
+  text-shadow: 2px 2px #F5B7B1;
+  font-style: oblique;
+  font-weight: bold;
+  color: white;
+  font-size: 40px;
+}
