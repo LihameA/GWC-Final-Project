@@ -1,0 +1,36 @@
+<!doctype html>
+ <html>
+ <head>
+  <title> Final Project</title>
+  <center><h1>Unitool</h1><center>
+ <link href="FinalPrjoect.css" rel= "stylesheet"/>
+ <script src= "FinalProject.js"></script>
+  <script>
+  function validate(){
+  x = document.forms["myform"]["fname"].value;
+  if( x = " "){
+  alert("Name must be filled out");
+  return False;
+  }
+  }
+  </script>
+  </head>
+  <body>
+  <form name="myForm" action= "Project1.html" onsubmit="return validate()" method="post">
+   <div class="container">   <!-- creating the boxes using container witch is ab element in div -->
+   <div class="main">
+   <center><h1>Find the Path for you<h1><center>
+   <h2>Log in Form</h2>
+   <form id="form_id" method="post" name="myform">
+   <label> Name:</label>
+   <input type="text" user="fname" id="name"/>
+   <label>Last Name:</label>
+   <input type="text" name="lname" id="name"/>
+   <a href="Survey.html">
+   <input type="submit" value="submit">  <!--Linking button to next page-->
+   </a>
+   </form>
+   </div>
+   </div>
+   </body>
+   </html>
