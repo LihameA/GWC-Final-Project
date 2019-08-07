@@ -1,0 +1,101 @@
+<!doctype html>
+<html>
+    <head>
+      <title>Homepage</title>
+      <link href="icons.css" rel="stylesheet"/>
+    </head>
+    <meta name="viewpoint" content="width=device-width, initial-scale=1">
+<body>
+  <div3>
+        <a href= "resourcesicon.png">  <!--Faq + resources-->
+          <center><img src="resourcesicon.png" width="200" height="200" onmouseover="this.src='resourcesiconwords.png';" onmouseout="this.src='resourcesicon.png'"/>
+          </center>
+        </a>
+    </div3>
+  <div2>
+    <a href= ""> <!-- insert homepage link-->
+      <center> <img src="logo.png" width="400" height="400" onmouseover="this.src='logo.png';"/> </center>
+    </a>
+  </div2>
+
+<!--
+  <div0>
+    <a href="about.html">
+      <img src="abouticon.png" width="200" height="200" onmouseover="this.src='abouticonwords.png';" onmouseout="this.src='abouticon.png'"/>
+    </a>
+  </div0>
+  <br><br><br><br><br>
+-->
+
+  <div3>
+    <a href="">  <!--Faq + resources-->
+      <img src="resourcesicon.png" width="200" height="200" onmouseover="this.src='resourcesiconwords.png';" onmouseout="this.src='resourcesicon.png'"/>
+    </a>
+    <div3>
+<br><br><br><br><br>
+  <div0>
+    <a href="about.html">
+      <img src="abouticon.png" width="200" height="200" onmouseover="this.src='abouticonwords.png';" onmouseout="this.src='abouticon.png'"/>
+    </a>
+  </div0>
+
+  <div1>
+    <a href="">  <!--chat page would go here-->
+      <img src="chaticon.png" width="200" height="200" onmouseover="this.src='chaticon.png';" onmouseout="this.src='chaticonwords.png'"/>
+    </a>
+  </div1>
+
+
+  <div4>
+    <a href="">  <!--stress free page-->
+      <img src="stressfreeicon.png" width="200" height='200' onmouseover="this.src='stressfreeiconwords.png';" onmouseout="this.src='stressfreeicon.png"/>
+    </a>
+  <div4>
+</body>
+</html>
+
+</body>
+
+
+Css Page: 
+
+iv2 {         /**logo**/
+
+  position: absolute;
+  align-self: center;
+}
+div0{             /** about**/
+  position: relative;
+  top: 2000px;
+}
+div3{         /**resources**/
+  position: absolute;
+  top: 2000px
+
+
+}
+div1 {          /**chat**/
+    position: absolute;
+    left: 170px;
+    top: 3000px;
+}
+
+
+
+div0{             /** about**/
+  position: absolute;
+  left: 170px;
+  top: 1120px;
+}
+
+div3{         /**resources**/
+  position: absolute;
+    left: 600px;
+    top: 900px;
+}
+
+div4{        /** stressfree**/
+  position: absolute;
+   left: 1050px;
+   top: 1120px;
+}
