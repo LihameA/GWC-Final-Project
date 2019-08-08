@@ -1,0 +1,41 @@
+<!doctype html>
+ <html>
+ <head>
+  <title> Final Project</title>
+  <center><h1>Unitool</h1><center>
+ <link rel="stylesheet" type="text/css" href="FinalProject.css">
+ <script src= "Submit.js"></script>
+  </head>
+  <body>
+
+   <div class="container">   <!-- creating the boxes using container witch is ab element in div -->
+   <div class="main">
+   <center><h1>Find the Path for you<h1><center>
+   <h2>Log in Form</h2>
+
+   <label> Name:</label>
+   <input type="text" user="fname" id="name"/>
+   <label>Last Name:</label>
+   <input type="text" name="lname" id="name"/>
+   <button onclick="presssubmit()" type="submit" id="submit">submit</button><!--Linking button to first question-->
+   </div>
+   </div>
+
+<p id="Q1"> We want to chose the best school for you but first let's get</p>
+
+
+   </body>
+   </html>
+   
+  <!--submit.js-->
+  
+   function presssubmit(){
+  var submit = document.getElementById('submit');
+  var q1 = document.getElementById("Q1");
+
+  if (q1.style.display === "none"){
+    q1.style.display = "block";
+  } else{
+    submit.style.display = "none";
+  }
+}
