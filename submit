@@ -39,3 +39,18 @@
     submit.style.display = "none";
   }
 }
+<p id="Q1">We want to chose the best school for you but first let's get to know you!</p>
+
+<p id="Q2">Do you want to stay close to home or go out and explore the world?</p>
+
+<p id="Q3">What is your ideal college location?></p>
+
+<p id="Q4">Is prestige important to you?></p>
+
+<p id="Q5">What kind of grades do you have?</p>
+
+<p id="Q6">What classroojm are you looking for?></p>
+
+<p id="Q7">What is your Financial Situation?</p>
+
+<p id="Q8">What are college values that are important to you?></p>
