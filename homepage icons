@@ -1,0 +1,94 @@
+<!--Homepage for UniTools-->
+<!DOCTYPE html>
+<html>
+    <head>
+      <title>Home Page</title>
+      <!-- <link href="icons.css" rel="stylesheet"/> -->
+      <meta name="viewpoint" content="width=device-width, initial-scale=1">
+    </head>
+    <p> College help, stress free </p>
+
+    <style>
+
+    body{
+      background-color:lightgray;
+      background-image: url(logo.png);
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      background-position: 50% 50%;
+      text-align: center;
+      font-size: 50px;
+      margin-top:40px ;
+
+    }
+
+    div00 {
+
+      top: 30px;
+      left: 20px;
+
+    }
+    div0 {
+        position: absolute;
+        left: 550px;
+        top:-90px;
+
+    }
+    div1{
+      position: absolute;
+      left: 220px;
+      top: 170px;
+
+    }
+    div2{
+      position: absolute;
+      left: 550px;
+      top: 450px;
+
+
+    }
+    div3{
+      position: absolute;
+      left: 900px;
+      top: 280px;
+
+    }
+
+
+    </style>
+
+    <body class = "center">
+      <!-- this is for the books icon -->
+      <div0>
+        <a href = "">
+          <img src = "resourcesicon.png" width = "85%" height="85%" onmouseover="this.src='resourcesiconwords.png';" onmouseout="this.src='resourcesicon.png';" />
+        </a>
+      </div0>
+
+      <div1>
+        <a href = "">
+          <img src = "abouticon.png" width = "85%" height="85%" onmouseover="this.src='abouticonwords.png';" onmouseout="this.src='abouticon.png';"/>
+
+        </a>
+      </div1>
+
+      <div2>
+        <a href = "">
+          <img src = "stressfreeicon.png" width = "85%" height="85%" onmouseover="this.src='stressfreeiconwords.png';" onmouseout="this.src='stressfreeicon.png';"/>
+        </a>
+
+      </div2>
+
+      <div3>
+        <a href = "">
+          <img src = "pathicon.png" width = "85%" height="85%" onmouseover="this.src='pathwords.png';" onmouseout="this.src='pathicon.png';"/>
+        </a>
+      </div3>
+      <div00 class="centered"> </div00>
+
+
+
+    </body>
+
+
+</html>
