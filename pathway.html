@@ -1,0 +1,106 @@
+
+<!doctype html>
+ <html>
+ <head>
+  <title> Pathway to College </title>
+  <center><h1>Unitool</h1><center>
+ <!--<link rel="stylesheet" type="text/css" href="FinalProject.css"> -->
+  </head>
+  <script>
+
+
+    function hideBtn(idOfBtn, sect) {
+       var submit = document.getElementById(idOfBtn);
+       submit.style.display = "none";
+
+       var q = document.getElementById(sect);
+       if(q.style.display = "none"){
+           q.style.display = "block";
+       }
+     }
+
+  </script>
+  <body>
+
+   <div class="container">   <!-- creating the boxes using container witch is ab element in div -->
+   <div class="main">
+   <center><h1>Find the Path for you<h1><center>
+   <h2>Log in Form</h2>
+
+   <label> Name:</label>
+   <input type="text" user="fname" id="name"/>
+   <label>Last Name:</label>
+   <input type="text" name="lname" id="name"/>
+     <button id="beginSurv" onclick= "hideBtn('beginSurv','sect1');">submit</button>
+   <style>
+     div.sections {
+       display: none;
+     }
+  </style>
+
+
+   </div>
+   </div>
+
+
+
+  <!--submit.js-->
+
+    <h3 id="statement"> We want to choose the best school for you, but first let's get to know you! </h3>
+  <!--  <div class="sections"> -->
+  <div>
+    <div id="sect1" style = "display: none;" >
+      <p id="Q1">Do you want to stay close to home or go out and explore the world?</p>
+        <div>
+        <button id="submitQ1" onclick="hideBtn('submitQ1', 'sect2')" type="submit" >submit</button>
+        </div>
+    </div>
+
+    <div id="sect2"  style = "display: none;">
+        <p id="Q2">What is your ideal college location?</p>
+          <div>
+            <button  id="submitQ2" onclick="hideBtn('submitQ2', 'sect3')" type="submit">submit</button>
+          </div>
+      </div>
+
+      <div id="sect3"  style = "display: none;">
+        <p id="Q3">Is prestige important to you?</p>
+          <div>
+            <button id="submitQ3" onclick="hideBtn('submitQ3', 'sect4')">submit</button>
+          </div>
+      </div>
+
+
+     <div id="sect4"  style = "display: none;">
+       <p id="Q4">What kind of grades do you have?</p>
+        <div>
+          <button id="submitQ4" onclick="hideBtn('submitQ4', 'sect5')">submit</button>
+        </div>
+      </div>
+
+     <div id="sect5"  style = "display: none;">
+       <p id="Q5">What classroom are you looking for?</p>
+        <div>
+          <button id="submitQ5" onclick="hideBtn('submitQ5', 'sect6')">submit</button>
+        </div>
+    </div>
+
+     <div id="sect6"  style = "display: none;">
+       <p id="Q6">What is your Financial Situation?</p>
+        <div>
+          <button id="submitQ6" onclick="hideBtn('submitQ6', 'sect7')" >submit</button>
+        </div>
+    </div>
+
+     <div id="sect7"  style = "display: none;">
+      <p id="Q7">What are college values that are important to you?</p>
+      <a href="Barnard.html">
+          <button id="submitQ7">submit</button>
+      </a>
+        </div>
+     </div>
+
+    </div>
+
+   </body>
+   </html>
