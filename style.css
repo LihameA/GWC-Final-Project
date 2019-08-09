@@ -1,0 +1,17 @@
+body{
+  background:#EB7663;
+  font-family: rockwell;
+  text-align: center;
+  background-color: white;
+}
+h2{
+  color: #159797;
+}
+
+h1{
+  text-shadow: 4px 4px white;
+  font-weight: bold;
+  font-size: 40px;
+  padding: 5% ;
+  background-color: #159797;
+}

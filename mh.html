@@ -1,40 +1,464 @@
 <!doctype html>
 <html>
+  <head>
+    <link href="style.css" rel="stylesheet"/>
+    <style>
+      * {box-sizing: border-box}
+      body {font-family: rockwell; margin:0}
+      .mySlides {display: none}
+      img {vertical-align: middle;}
+      /* Slideshow container */
+      .slideshow-container {
+        max-width: 500px;
+        position: relative;
+        margin: auto;
+      }
+      /* Next & previous buttons */
+      .next {
+        cursor: pointer;
+        position: absolute;
+        left: 435px;
+        top: 50%;
+        width: auto;
+        padding: 16px;
+        margin-top: -22px;
+        color: white;
+        font-weight: bold;
+        font-size: 18px;
+        transition: 0.6s ease;
+        border-radius: 0 3px 3px 0;
+        user-select: none;
+        color: #E37E0D;
+      }
+      .prev{
+        cursor: pointer;
+        position: absolute;
+        left: 1px;
+        top: 50%;
+        width: auto;
+        padding: 16px;
+        margin-top: -22px;
+        color: white;
+        font-weight: bold;
+        font-size: 18px;
+        transition: 0.6s ease;
+        border-radius: 0 3px 3px 0;
+        user-select: none;
+        color: #E37E0D;
+      }
+      /* Position the "next button" to the right */
+      .next {
+        right: 0;
+        border-radius: 3px 0 0 3px;
+      }
+      /* Next and previous buttons */
+      /* On hover, add a black background color with a little bit see-through */
+      .prev:hover, .next:hover {
+        background-color: rgba(0,0,0,0.8);
+      }
+      /* Number text (1/2 etc) */
+      .numbertext {
+        color: #f2f2f2;
+        font-size: 12px;
+        padding: 8px 12px;
+        position: absolute;
+        top: 0;
+      }
+      /* The dots/bullets/indicators */
+      .dot {
+        cursor: pointer;
+        height: 15px;
+        width: 15px;
+        margin: 0 2px;
+        background-color: #bbb;
+        border-radius: 50%;
+        display: inline-block;
+        transition: background-color 0.6s ease;
+      }
+      .active, .dot:hover {
+        background-color: #717171;
+      }
+      /* Fading animation */
+      .fade {
+        -webkit-animation-name: fade;
+        -webkit-animation-duration: 1.5s;
+        animation-name: fade;
+        animation-duration: 1.5s;
+      }
+      @-webkit-keyframes fade {
+        from {opacity: .4}
+        to {opacity: 1}
+      }
+      @keyframes fade {
+        from {opacity: .4}
+        to {opacity: 1}
+      }
+      /* On smaller screens, decrease text size */
+      @media only screen and (max-width: 300px) {
+        .prev, .next,.text {font-size: 11px}
+      }
+      * {box-sizing: border-box}
+      body {font-family: rockwell; margin:0}
+      .mySlides2 {display: none}
+      img {vertical-align: middle;}
+      /* Slideshow container */
+      .slideshow-container2{
+        max-width: 500px;
+        position: relative;
+        margin: auto;
+      }
+      .prev2{
+        cursor: pointer;
+        position: absolute;
+        left: 1px;
+        top: 50%;
+        width: auto;
+        padding: 16px;
+        margin-top: -22px;
+        color: white;
+        font-weight: bold;
+        font-size: 18px;
+        transition: 0.6s ease;
+        border-radius: 0 3px 3px 0;
+        user-select: none;
+        color: #E37E0D;
+      }
+      /* Next & previous buttons */
+      .next2 {
+        cursor: pointer;
+        position: absolute;
+        top: 50%;
+        width: auto;
+        padding: 16px;
+        margin-top: -22px;
+        color: white;
+        font-weight: bold;
+        font-size: 18px;
+        transition: 0.6s ease;
+        border-radius: 0 3px 3px 0;
+        user-select: none;
+        color: #E37E0D;
+      }
+      /* Position the "next button" to the right */
+      .next2 {
+        right: 0;
+        border-radius: 3px 0 0 3px;
+      }
+      /* Next and previous buttons */
 
-    <head>
-      <link href="style.css" rel="stylesheet"/>
-    </head>
+      /* On hover, add a black background color with a little bit see-through */
+      .prev2:hover, .next2:hover {
+        background-color: rgba(0,0,0,0.8);
+      }
+      /* Number text (1/2 etc) */
+      .numbertext2 {
+        color: #f2f2f2;
+        font-size: 12px;
+        padding: 8px 12px;
+        position: absolute;
+        top: 0;
+      }
+      /* The dots/bullets/indicators */
+      .dot2 {
+        cursor: pointer;
+        height: 15px;
+        width: 15px;
+        margin: 0 2px;
+        background-color: #bbb;
+        border-radius: 50%;
+        display: inline-block;
+        transition: background-color 0.6s ease;
+      }
+      .active2, .dot2:hover {
+        background-color: #717171;
+      }
+      /* Fading animation */
+      .fade2 {
+        -webkit-animation-name: fade;
+        -webkit-animation-duration: 1.5s;
+        animation-name: fade;
+        animation-duration: 1.5s;
+      }
+      @-webkit-keyframes fade2 {
+        from {opacity: .4}
+        to {opacity: 1}
+      }
+      @keyframes fade2 {
+        from {opacity: .4}
+        to {opacity: 1}
+      }
+      /* On smaller screens, decrease text size */
+      @media only screen and (max-width: 300px) {
+        .prev2, .next2,.text {font-size: 11px}
+      }
+    </style>
+  </head>
+  <body>
+    <h1>MENTAL HEALTH</h1>
+<!--                          WHAT IS MENTAL HEALTH SLIDE SHOW                     -->
+    <div class="slideshow-container2">
+      <div class="mySlides2 fade2">
+        <img src="img2.jpg" style="width:100%">
+      </div>
 
-    <body>
-      <h1>MENTAL HEALTH</h1>
-      <p>
-      <h2>WHAT IS MENTAL HEALTH?</h2>
-      <h4>Mental Health includes our emotional, psychological, and social well-being. In addition to our ability to solve problems and overcome difficulties.</h4><br>
-      <h2>WHAT MENTAL HEALTH IS NOT?</h2>
-      <h4>Mental Health is NOT an illness or a disease. A common misconception is that the terms Mental Health and Mental Illnesses are interchangeable and are dependent on each other. Not everyone experiences a mental illness however, everyone does, in fact, face issues with mental health during the span of their life. </h4><br>
-      <h2>HOW TO IMPROVE YOUR MENTAL HEALTH?</h2>
-      <h3>1. Try to think positive.</h3>
-      <h4>            According to the National Science Foundation, the average person has about 12,000 to 60,000 thoughts per day. Of those, 80% are negative and 95% are repetitive. If 95% of those thoughts are repetitive and 80% are negative, you’re constantly repeating negative thoughts. To improve the quality of your thoughts, every time you catch yourself thinking something negative, find a positive to combat that negativity.</h4>
-      <h3>2. Exercise regularly. </h3>
-      <h4>            This doesn’t mean you have to go to the gym everyday, you need to start small. To maintain a healthy lifestyle, exercising for roughly 20-30 minutes 5 times a week, is crucial. Even if that means taking a walk around your block, start with that and slowly build up.</h4>
-      <h3>3. Practice introspection. </h3>
-      <h4>            Introspection is the process of observing your emotional and mental states. One way that you can practice introspection is by keeping a journal. Many people commit to keeping a journal, go about it for a week or so, and entirely forget about it after that. Staying in touch with your feelings and thoughts are extremely important when looking to improve your mental well-being.</h4>
-      <h3>4. Find something that you like to do.</h3>
-      <h4>            Finding a hobby can drastically change your lifestyle if done correctly. A good rule is to find a hobby that will keep you happy/something you enjoy, a hobby that will keep you healthy/fit, and a hobby that will make you money.</h4>
-      <h3>5. Prioritize your sleep.</h3>
-      <h4>            This is extremely important for college students as they live off of caffeine and roughly 5-6 hours of sleep (sometimes less). It goes without saying but the more sleep you get, the better you’re able to function. Sometimes, you’re better off getting sleep rather than staying up late for an assignment, for if you’re sleep deprived, your work if probably not the best quality anyways.</h4><br>
-      <h2>STRESS FREE DURING THE APPLICATION PROCESS<h2>
-      <h4>1. Develop a calendar of due dates and deadlines.</h4>
-      <h4>2. Start the process early so you reduce stress and tension.</h4>
-      <h4>3. Get your recommendations beforehand.</h4>
-      <h4>4. Be open to more than one college to avoid (possible) disappointments.</h4>
-      <h4>5. Be authentic and honest in your essay.</h4><br>
-      <h2>REMEMBER</h2>
-      <h4>1. The college you go to doesn’t define you.
-      <h4>2. Seek out support groups.
-      <h4>3. Find “your people” whether it be a club/team/sorority
-      <h4>4. Don’t be scared to ask for help from your professors/teachers
-      <h4>5. Don’t rule out therapy as an option.
-      </p>
+      <div class="mySlides2 fade2">
+        <img src="img1.jpg" style="width:100%">
+      </div>
+
+      <a class="prev2" onclick="plusSlides2(-1)">&#10094;</a>
+      <a class="next2" onclick="plusSlides2(1)">&#10095;</a>
+
+    </div>
+    <br>
+
+    <div style="text-align:center">
+      <span class="dot2" onclick="currentSlide2(1)"></span>
+      <span class="dot2" onclick="currentSlide2(2)"></span>
+    </div>
+
+    <script>
+      var slideIndex = 1;
+      showSlides2(slideIndex);
+
+      function plusSlides2(n) {
+        showSlides2(slideIndex += n);
+      }
+
+      function currentSlide2(n) {
+        showSlides2(slideIndex = n);
+      }
+
+      function showSlides2(n) {
+        var i;
+        var slides = document.getElementsByClassName("mySlides2");
+        var dots = document.getElementsByClassName("dot2");
+        if (n > slides.length) {slideIndex = 1}
+        if (n < 1) {slideIndex = slides.length}
+        for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+        }
+        for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex-1].style.display = "block";
+        dots[slideIndex-1].className += " active";
+      }
+    </script>
+
+
+<!--                      HOW TO IMPOROVE YOUR MENTAL HEALTH SLIDE SHOW             -->
+
+
+    <div class="slideshow-container">
+
+      <div class="mySlides fade">
+        <img src="img3.jpg" style="width:100%">
+      </div>
+
+      <div class="mySlides fade">
+        <img src="img4.jpg" style="width:100%">
+      </div>
+
+      <div class="mySlides fade">
+        <img src="img5.jpg" style="width:100%">
+      </div>
+
+      <div class="mySlides fade">
+        <img src="img6.jpg" style="width:100%">
+      </div>
+
+      <div class="mySlides fade">
+        <img src="img7.jpg" style="width:100%">
+      </div>
+
+      <div class="mySlides fade">
+        <img src="img8.jpg" style="width:100%">
+      </div>
+
+      <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+      <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+    </div>
+    <br>
+
+    <div style="text-align:center">
+      <span class="dot" onclick="currentSlide(1)"></span>
+      <span class="dot" onclick="currentSlide(2)"></span>
+      <span class="dot" onclick="currentSlide(3)"></span>
+      <span class="dot" onclick="currentSlide(4)"></span>
+      <span class="dot" onclick="currentSlide(5)"></span>
+      <span class="dot" onclick="currentSlide(6)"></span>
+    </div>
+    <script>
+      var slideIndex = 1;
+      showSlides(slideIndex);
+
+      function plusSlides(n) {
+        showSlides(slideIndex += n);
+      }
+
+      function currentSlide(n) {
+        showSlides(slideIndex = n);
+      }
+
+      function showSlides(n) {
+        var i;
+        var slides = document.getElementsByClassName("mySlides");
+        var dots = document.getElementsByClassName("dot");
+        if (n > slides.length) {slideIndex = 1}
+        if (n < 1) {slideIndex = slides.length}
+        for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+        }
+        for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex-1].style.display = "block";
+        dots[slideIndex-1].className += " active";
+      }
+    </script>
+<!--                   STRESS FREE DURING THE COLLEGE APP PROCESS SLIDE SHOW                       -->
+<div class="slideshow-container">
+
+  <div class="mySlides fade">
+    <img src="img9.jpg" style="width:100%">
+  </div>
+
+  <div class="mySlides fade">
+    <img src="img10.jpg" style="width:100%">
+  </div>
+
+  <div class="mySlides fade">
+    <img src="img11.jpg" style="width:100%">
+  </div>
+
+  <div class="mySlides fade">
+    <img src="img12.jpg" style="width:100%">
+  </div>
+
+  <div class="mySlides fade">
+    <img src="img13.jpg" style="width:100%">
+  </div>
+
+  <div class="mySlides fade">
+    <img src="img14.jpg" style="width:100%">
+  </div>
+
+  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span>
+  <span class="dot" onclick="currentSlide(2)"></span>
+  <span class="dot" onclick="currentSlide(3)"></span>
+  <span class="dot" onclick="currentSlide(4)"></span>
+  <span class="dot" onclick="currentSlide(5)"></span>
+  <span class="dot" onclick="currentSlide(6)"></span>
+</div>
+<script>
+  var slideIndex = 1;
+  showSlides(slideIndex);
+
+  function plusSlides(n) {
+    showSlides(slideIndex += n);
+  }
+
+  function currentSlide(n) {
+    showSlides(slideIndex = n);
+  }
+
+  function showSlides(n) {
+    var i;
+    var slides = document.getElementsByClassName("mySlides");
+    var dots = document.getElementsByClassName("dot");
+    if (n > slides.length) {slideIndex = 1}
+    if (n < 1) {slideIndex = slides.length}
+    for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+    }
+    for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+    }
+    slides[slideIndex-1].style.display = "block";
+    dots[slideIndex-1].className += " active";
+  }
+</script>
+
+
+
+<!--                                END OF SFDTCAP      -->
+<!--        Start of remember -->
+<div class="slideshow-container">
+
+  <div class="mySlides fade">
+    <img src="img15.jpg" style="width:100%">
+  </div>
+
+  <div class="mySlides fade">
+    <img src="img16.jpg" style="width:100%">
+  </div>
+
+  <div class="mySlides fade">
+    <img src="img17.jpg" style="width:100%">
+  </div>
+
+  <div class="mySlides fade">
+    <img src="img18.jpg" style="width:100%">
+  </div>
+
+  <div class="mySlides fade">
+    <img src="img19.jpg" style="width:100%">
+  </div>
+
+  <div class="mySlides fade">
+    <img src="img20.jpg" style="width:100%">
+  </div>
+
+  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span>
+  <span class="dot" onclick="currentSlide(2)"></span>
+  <span class="dot" onclick="currentSlide(3)"></span>
+  <span class="dot" onclick="currentSlide(4)"></span>
+  <span class="dot" onclick="currentSlide(5)"></span>
+  <span class="dot" onclick="currentSlide(6)"></span>
+</div>
+<script>
+  var slideIndex = 1;
+  showSlides(slideIndex);
+
+  function plusSlides(n) {
+    showSlides(slideIndex += n);
+  }
+
+  function currentSlide(n) {
+    showSlides(slideIndex = n);
+  }
+
+  function showSlides(n) {
+    var i;
+    var slides = document.getElementsByClassName("mySlides");
+    var dots = document.getElementsByClassName("dot");
+    if (n > slides.length) {slideIndex = 1}
+    if (n < 1) {slideIndex = slides.length}
+    for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+    }
+    for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+    }
+    slides[slideIndex-1].style.display = "block";
+    dots[slideIndex-1].className += " active";
+  }
+</script>
+<!--        End of remember -->
     </body>
 </html>
