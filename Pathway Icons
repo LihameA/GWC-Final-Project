@@ -1,0 +1,215 @@
+<!doctype html>
+ <html>
+ <head>
+  <title> Final Project</title>
+  <center><h1>Unitool</h1><center>
+ <meta name="viewpoint" content="width=device-width, initial-scale=1"> <!-- for the icons-->
+ <link href="FinalProject.css" rel="stylesheet" type="text/css">
+ <script src= "Submit.js"></script>
+  </head>
+  <body>
+
+   <div class="container">   <!-- creating the boxes using container witch is ab element in div -->
+   <div class="main">
+   <center><h1>Find the Path for you<h1><center>
+
+   <label> Name:</label>
+   <input type="text" user="fname"/>
+   <label>Last Name:</label>
+   <input type="text" name="lname"/>
+   </div>
+   </div>
+
+<div class="container">  <!--creating the boxes using container witch is an element in div-->
+<div class="main">
+
+  <label>Age:</label>
+  <input type="text"/>
+  <label>Graduation Year:</label>
+  <input type="text"/>
+  <label>State:</label>
+  <input type="text"/>
+  <button onclick="presssubmit()" type="submit" id="submit">submit</button> <!--Linking button to first question-->
+  </div>
+</div>
+
+<h3 id="statement"> We want to choose the best school for you, but first let's get to know you! </h3>
+    <p class="questions" id="Q1">Do you want to stay close to home or go out and explore the world?
+      <div4><img src="homeicon.png" height="200" width="200" onclick = "this.src = 'homewords.png';"/></div4>
+      <div5><img src="" height="200" width="200" onclick ="this.src='"/><div5>
+     <button onclick="presssubmit('Q2')" type="submit" id="submit">submit
+    </button>
+   </p>
+
+  <p class="questions" id="Q2">What is your ideal college location?</p>
+     <div6><img src="smalltownicon.png" height="200" width="200" onclick = "this.src = 'smalltownwords.png';" /></div6>
+     <div7><img src="cityicon.png" height="200" width="200" onclick= "this.src=cityname.png" onmouseover="this.src='cityname.png'"/></div7>
+      <button onclick="presssubmit('Q3')" type="submit" id="submit">submit
+  </button>
+</p>
+-
+
+    <p class="questions" id="Q3">Is prestige important to you?
+     <div9><img src="noicon.png" height="200" width="200" onclick=" this.src = 'nowords.png'" onmouseover="'noicon.png';"/></div9>
+      <button onclick="presssubmit('Q4')" type="submit" id="submit">submit
+     </button>
+     </p>
+
+
+
+    <p class="questions" id="Q4">What kind of grades do you have?
+     <div10><img src="" height="200" width="200" onclick=" this.src = 'mostlyaswords.png'" onmouseover="'';"/></div10>
+     <div11><img src="" height="200" width="200" onclick=" this.src = 'asandbswords.png'" onmouseover="'';"/></div11>
+     <div12><img src="" height="200" width="200" onclick=" this.src = ''" onmouseover="'';"/></div12>
+     <div13><img src="csandbelow.png" height="200" width="200" onclick=" this.src ='csandbelowwords.png'" onmouseover="'';"/></div12>
+     <button onclick="presssubmit('Q5')" type="submit" id="submit">submit
+     </button>
+    </p>
+
+
+    <p class="questions" id="Q5">What classroom are you looking for?>
+
+     <div14><img src="smallicon.png" height="200" width="200" onclick=" this.src = 'smallwords.png'" onmouseover="'';"/></div15>
+     <div15><img src="mediumicon.png" height="200" width="200" onclick=" this.src = 'mediumwordsicon.png'" onmouseover="'';"/></div15>
+     <div16><img src="largeicon.png" height="200" width="200" onclick=" this.src = 'largewords.png'" onmouseover="'';"/></div16>
+     <button onclick="presssubmit('Q6')" type="submit" id="submit">submit
+    </button>
+    </p>
+
+    <p class="questions" id="Q6">What is your Financial Situation?</p>
+     <button onclick="presssubmit('Q7')" type="submit" id="submit">submit</button>
+     <div17><img src="shmoneyicon.png" height="200" width="200" onclick=" this.src = 'shmoneywordsicon.png'" onmouseover="'';"/></div17>
+     <div18><img src="scholaricon.png" height="200" width="200" onclick=" this.src = 'scholarwords.png'" onmouseover="'';"/></div18>
+
+    <p class="questions" id="Q7">What are college values that are important to you?
+    <div19><img src="sistericon.png" height="200" width="200" onclick=" this.src = 'sistericonwords.png'" onmouseover="'';"/></div19>
+    <div20><img src="religionicon.png" height="200" width="200" onclick=" this.src = 'religionwordsicon.png'" onmouseover="'';"/></div20>
+    <div21><img src="hbcuicon.png" height="200" width="200" onclick=" this.src = 'hbcuwords.png'" onmouseover="'';"/></div21>
+    <div22><img src="brothericon.png" height="200" width="200" onclick=" this.src = 'brothericonwords.png'" onmouseover="'';"/></div21>
+     <button onclick="presssubmit('end')" type="submit" id="submit">submit
+    </button>
+     </p>
+
+   </body>
+   </html>
+/CSS/ 
+Q1{
+  display: none;
+  background: ;
+
+}
+
+div4{   /**HOME**/
+  position: absolute;
+  left: 30%;
+  top: 35%;
+
+}
+
+div5{     /**WORLD**/
+  position:
+  left: 30%
+  top: 50%
+}
+
+div6{ /**smalltown**/
+  position:
+  left:
+  top:
+}
+
+div7{ /** citytown **/
+  position:
+  left:
+  top:
+
+}
+
+div8{ /** suburban**/
+  position
+  top
+  left
+
+}
+div9{ /** prestige**/
+  position:
+  top:
+  left:
+}
+
+div10{ /** A**/
+  posistion:
+  top:30%
+  left:50%
+}
+
+div11{
+  position;
+  top:
+  left:
+}
+
+div12{
+  position;
+  top:
+  left:
+}
+
+div13{
+  position;
+  top:
+  left:
+}
+
+div14{
+  position;
+  top:
+  left:
+}
+
+div15{
+  position;
+  top:
+  left:
+}
+
+div16{
+  position;
+  top:
+  left:
+}
+div17{
+  position;
+  top:
+  left:
+}
+
+div18{
+  position;
+  top:
+  left:
+}
+
+div19{
+  position;
+  top:
+  left:
+}
+
+div20{
+  position;
+  top:
+  left:
+}
+
+div21{
+  position;
+  top:
+  left:
+}
+
+div22{
+  position;
+  top:
+  left:
+}
