@@ -36,7 +36,7 @@
 <h3 id="statement"> We want to choose the best school for you, but first let's get to know you! </h3>
     <p class="questions" id="Q1">Do you want to stay close to home or go out and explore the world?
       <div4><img src="homeicon.png" height="200" width="200" onclick = "this.src = 'homewords.png';"/></div4>
-      <div5><img src="" height="200" width="200" onclick ="this.src='"/><div5>
+      <div5>worldicon.png<img src="" height="200" width="200" onclick ="this.src='worldiconwords.png"/><div5>
      <button onclick="presssubmit('Q2')" type="submit" id="submit">submit
     </button>
    </p>
@@ -44,13 +44,15 @@
   <p class="questions" id="Q2">What is your ideal college location?</p>
      <div6><img src="smalltownicon.png" height="200" width="200" onclick = "this.src = 'smalltownwords.png';" /></div6>
      <div7><img src="cityicon.png" height="200" width="200" onclick= "this.src=cityname.png" onmouseover="this.src='cityname.png'"/></div7>
-      <button onclick="presssubmit('Q3')" type="submit" id="submit">submit
+     <div23><img src="suburbicon.png" height="200" width="200" onclick= "this.src=suburbwords.png" onmouseover="this.src='suburbwords.png'"/></div23>
+     <button onclick="presssubmit('Q3')" type="submit" id="submit">submit
   </button>
 </p>
 -
 
     <p class="questions" id="Q3">Is prestige important to you?
      <div9><img src="noicon.png" height="200" width="200" onclick=" this.src = 'nowords.png'" onmouseover="'noicon.png';"/></div9>
+     <div24><img src="yesicon.png" height="200" width="200" onclick= "this.src=yeswords.png" onmouseover="this.src='yeswords.png'"/></div7>
       <button onclick="presssubmit('Q4')" type="submit" id="submit">submit
      </button>
      </p>
@@ -213,3 +215,16 @@ div22{
   top:
   left:
 }
+
+div23{
+  position;
+  top:
+  left:
+}
+
+div24{
+  position;
+  top:
+  left:
+}
+
