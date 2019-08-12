@@ -1,24 +1,22 @@
-
 <!doctype html>
  <html>
  <head>
   <title> Pathway to College </title>
   <center><h1>Unitool</h1><center>
+  <meta name="viewpoint" content="width=device-width, initial-scale=1"> <!-- for the icons-->
+  <link href="FinalProject.css" rel="stylesheet" type="text/css">
+  <script src= "Submit.js"></script>
  <!--<link rel="stylesheet" type="text/css" href="FinalProject.css"> -->
   </head>
   <script>
-
-
     function hideBtn(idOfBtn, sect) {
        var submit = document.getElementById(idOfBtn);
        submit.style.display = "none";
-
        var q = document.getElementById(sect);
        if(q.style.display = "none"){
            q.style.display = "block";
        }
      }
-
   </script>
   <body>
 
@@ -32,32 +30,28 @@
    <label>Last Name:</label>
    <input type="text" name="lname" id="name"/>
      <button id="beginSurv" onclick= "hideBtn('beginSurv','sect1');">submit</button>
-   <style>
-     div.sections {
-       display: none;
-     }
-  </style>
-
 
    </div>
    </div>
 
 
-
-  <!--submit.js-->
 
     <h3 id="statement"> We want to choose the best school for you, but first let's get to know you! </h3>
   <!--  <div class="sections"> -->
-  <div>
-    <div id="sect1" style = "display: none;" >
-      <p id="Q1">Do you want to stay close to home or go out and explore the world?</p>
+    <div id="sect1" style = "display: none;">
+      <p id="Q1">Do you want to stay close to home or go out and explore the world? </p>
+        <div4><img src="homeicon.png" height="200" width="200" onclick = "this.src = 'homewords.png';"></div4>
+        <div5><img src="worldicon.png" height="200" width="200" onclick ="this.src='worldiconwords.png'"></div5>
         <div>
-        <button id="submitQ1" onclick="hideBtn('submitQ1', 'sect2')" type="submit" >submit</button>
+        <button id="submitQ1" onclick="hideBtn('submitQ1', 'sect2')" type="submit">submit</button>
         </div>
     </div>
 
     <div id="sect2"  style = "display: none;">
         <p id="Q2">What is your ideal college location?</p>
+        <div6><img src="smalltownicon.png" height="200" width="200" onclick = "this.src = 'smalltownwords.png';" /></div6>
+        <div7><img src="cityicon.png" height="200" width="200" onclick= "this.src=cityname.png" onmouseover="this.src='cityname.png'"/></div7>
+        <div23><img src="suburbicon.png" height="200" width="200" onclick= "this.src=suburbwords.png" onmouseover="this.src='suburbwords.png'"/></div23>
           <div>
             <button  id="submitQ2" onclick="hideBtn('submitQ2', 'sect3')" type="submit">submit</button>
           </div>
@@ -65,6 +59,8 @@
 
       <div id="sect3"  style = "display: none;">
         <p id="Q3">Is prestige important to you?</p>
+           <div24><img src="yesicon.png" height="200" width="200" onclick= "this.src=yeswords.png" onmouseover="this.src='yeswords.png'"/></div24>
+           <div9><img src="noicon.png" height="200" width="200" onclick=" this.src = 'nowords.png'" onmouseover="'noicon.png';"/></div9>
           <div>
             <button id="submitQ3" onclick="hideBtn('submitQ3', 'sect4')">submit</button>
           </div>
@@ -73,6 +69,10 @@
 
      <div id="sect4"  style = "display: none;">
        <p id="Q4">What kind of grades do you have?</p>
+       <div10><img src="goodicon.png" height="200" width="200" onclick=" this.src = 'mostlyaswords.png'" onmouseover="'';"/></div10>
+       <div11><img src="goodicon.png" height="200" width="200" onclick=" this.src = 'asandbswords.png'" onmouseover="'';"/></div11>
+       <div12><img src="goodicon.png" height="200" width="200" onclick=" this.src = 'bswords.png'" onmouseover="'';"/></div12>
+       <div13><img src="csandbelow.png" height="200" width="200" onclick=" this.src ='csandbelowwords.png'" onmouseover="'';"/></div12>
         <div>
           <button id="submitQ4" onclick="hideBtn('submitQ4', 'sect5')">submit</button>
         </div>
@@ -80,6 +80,9 @@
 
      <div id="sect5"  style = "display: none;">
        <p id="Q5">What classroom are you looking for?</p>
+       <div14><img src="smallicon.png" height="200" width="200" onclick=" this.src = 'smallwords.png'" onmouseover="'';"/></div15>
+       <div15><img src="mediumicon.png" height="200" width="200" onclick=" this.src = 'mediumwordsicon.png'" onmouseover="'';"/></div15>
+       <div16><img src="largeicon.png" height="200" width="200" onclick=" this.src = 'largewords.png'" onmouseover="'';"/></div16>
         <div>
           <button id="submitQ5" onclick="hideBtn('submitQ5', 'sect6')">submit</button>
         </div>
@@ -87,6 +90,8 @@
 
      <div id="sect6"  style = "display: none;">
        <p id="Q6">What is your Financial Situation?</p>
+       <div17><img src="shmoneyicon.png" height="200" width="200" onclick=" this.src = 'shmoneywordsicon.png'" onmouseover="'';"/></div17>
+       <div18><img src="scholaricon.png" height="200" width="200" onclick=" this.src = 'scholarwords.png'" onmouseover="'';"/></div18>
         <div>
           <button id="submitQ6" onclick="hideBtn('submitQ6', 'sect7')" >submit</button>
         </div>
@@ -94,13 +99,17 @@
 
      <div id="sect7"  style = "display: none;">
       <p id="Q7">What are college values that are important to you?</p>
+      <div19><img src="sistericon.png" height="200" width="200" onclick=" this.src = 'sistericonwords.png'" onmouseover="'';"/></div19>
+      <div20><img src="religionicon.png" height="200" width="200" onclick=" this.src = 'religionwordsicon.png'" onmouseover="'';"/></div20>
+      <div21><img src="hbcuicon.png" height="200" width="200" onclick=" this.src = 'hbcuwords.png'" onmouseover="'';"/></div21>
+      <div22><img src="brothericon.png" height="200" width="200" onclick=" this.src = 'brothericonwords.png'" onmouseover="'';"/></div21>
       <a href="Barnard.html">
           <button id="submitQ7">submit</button>
       </a>
         </div>
      </div>
 
-    </div>
+   </div>
 
    </body>
    </html>
