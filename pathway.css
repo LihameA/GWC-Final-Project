@@ -1,0 +1,44 @@
+body {
+  background:#EB7663;
+  font-family: rockwell;
+  text-align: center;
+  background-color: white;
+}
+h2 {
+  color: black;
+  font-size: 35px;
+}
+
+h1 {
+  font-weight: bold;
+  font-size: 60px;
+  padding: 5% ;
+  background-color: #76a5af;
+}
+div31 {
+  position: fixed;
+  left: 2%;
+  top: 5%
+}
+
+div32 {
+  font-size: 150%;
+}
+
+div33 {
+  font-size: 90%;
+}
+
+#statement{
+  color: #e69138;
+}
+
+#Q1, #Q2, #Q3, #Q4, #Q5, #Q6, #Q7{
+  font-size:150%;
+}
+
+#submitQ1{
+  color: white;
+  font-family: rockwell;
+  fontcolo
+}
