@@ -1,5 +1,8 @@
 head {
   padding: 30px;
+  color:#e69138;
+
+
 
 }
 div.infoOnUs {
@@ -8,21 +11,34 @@ div.infoOnUs {
   margin-right: auto;
   background-color: none;
   box-shadow: 10px 10px 5px #999;
+  font-family:Rockwell;
+  color:black;
 
   /*box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); */
 }
 .block {
   display:block;
+  font-family:Rockwell;
+  background-color: white;
+
+
+
 }
 
+body{
+
+}
 p.name {
   text-align: left;
-
+  font-family: Rockwell;
+  color:#e69138;
+  font-size: 25px;
+  background-color: white;
 }
-/*
-div.infoOnUs {
+
+/*div.infoOnUs {
   width: auto;
-  background-color: none;
+  background-color:none;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   margin-bottom: 25px;
     border-radius: 50%;
@@ -32,5 +48,21 @@ div.infoOnUs {
 div.container {
   text-align: center;
   padding: 10px 20px;
+  background-color:lightgray;
 
 }
+
+div.row {
+  background-color:white;
+}
+
+h1{
+  font-family:Rockwell;
+}
+
+
+
+
+
+
+
