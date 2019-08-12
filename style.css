@@ -1,0 +1,27 @@
+body{
+  background:#EB7663;
+  font-family: rockwell;
+  text-align: center;
+  background-color: white;
+}
+h2{
+  color: black;
+  font-size: 35px;
+  padding: 3%;
+  background-color: #76a5af;
+}
+
+h1{
+  font-weight: bold;
+  font-size: 60px;
+  padding: 9% ;
+  background-color: #76a5af;
+}
+
+div27{
+  padding-top: .1%;
+  padding-right: 100%;
+  padding-bottom: 13%;
+  padding-left: 100%;
+  background-color: #76a5af;
+}
