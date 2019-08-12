@@ -37,8 +37,9 @@ div33 {
   font-size:150%;
 }
 
-#submitQ1{
-  color: white;
+#beginSurv, #submitQ1, #submitQ2, #submitQ3, #submitQ4, #submitQ5, #submitQ6, #submitQ7{
+  color: #76a5af;
   font-family: rockwell;
-  fontcolo
+  font-size: 15px;
+
 }
